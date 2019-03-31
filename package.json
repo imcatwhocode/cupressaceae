@@ -1,0 +1,42 @@
+{
+  "name": "cupressaceae",
+  "version": "1.0.0",
+  "description": "D-Bus media keys events to NativeMessaging proxy",
+  "scripts": {
+    "install": "node install.js"
+  },
+  "bin": {
+    "cupressaceae": "bin/cupressaceae.js"
+  },
+  "webextManifest": {
+    "name": "cupressaceae",
+    "description": "D-Bus media keys to stdout proxy",
+    "path": "/usr/bin/cupressaceae",
+    "type": "stdio",
+    "allowed_extensions": ["cupressaceae@imcatwhocode.dev"]
+  },
+  "xo": {
+    "env": ["node"],
+    "space": true,
+    "rules": {
+      "padded-blocks": ["error", "always"],
+      "curly": ["error", "multi"]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcatwhocode/cupressaceae.git"
+  },
+  "author": "Dmitry Pepperstein <imcatwhocode@gmail.com> (@imcatwhocode)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imcatwhocode/cupressaceae/issues"
+  },
+  "homepage": "https://github.com/imcatwhocode/cupressaceae#readme",
+  "devDependencies": {
+    "xo": "^0.24.0"
+  },
+  "dependencies": {
+    "dbus": "^1.0.3"
+  }
+}
